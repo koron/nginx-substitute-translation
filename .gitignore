@@ -1,3 +1,7 @@
 /build/
 /nginx-env/logs/*
 /nginx-env/temp/*_temp/
+/combine
+/tmp/
+
+*.exe
