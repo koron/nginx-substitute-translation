@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<title>管理 - Redmine</title>
+<meta name="description" content="Redmine">
+<meta name="keywords" content="issue,bug,tracker">
+<meta content="authenticity_token" name="csrf-param">
+<meta content="dtTWkeTXhNc2AmkbwrTzw7Rwh3WQhY63d1yMWn2JYys=" name="csrf-token">
+<link rel="shortcut icon" href="http://redmine.example.org/favicon.ico?1449305242">
+<link href="admin_files/jquery-ui-1.css" media="all" rel="stylesheet" type="text/css">
+<link href="admin_files/application.css" media="all" rel="stylesheet" type="text/css">
+
+<script src="admin_files/jquery-1.js" type="text/javascript"></script>
+<script src="admin_files/application.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('このページから移動すると、保存されていないデータが失われます。'); });
+//]]>
+</script>
+
+
+<!-- page specific tags -->
+</head>
+<body class="controller-admin action-index">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="http://redmine.example.org/my/account" class="my-account">個人設定</a></li>
+<li><a href="http://redmine.example.org/logout" class="logout" data-method="post" rel="nofollow">ログアウト</a></li></ul>    </div>
+    <div id="loggedas">ログイン中： <a href="http://redmine.example.org/users/3" class="user active">koron</a></div>
+    <ul><li><a href="http://redmine.example.org/" class="home">ホーム</a></li>
+<li><a href="http://redmine.example.org/my/page" class="my-page">マイページ</a></li>
+<li><a href="http://redmine.example.org/projects" class="projects">プロジェクト</a></li>
+<li><a href="http://redmine.example.org/admin" class="administration">管理</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">ヘルプ</a></li></ul></div>
+
+<div id="header">
+    <div id="quick-search">
+        <form accept-charset="UTF-8" action="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"></div>
+        
+        <label for="q">
+          <a href="http://redmine.example.org/search" accesskey="4">検索</a>:
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text">
+</form>        <select id="project_quick_jump_box" name="project_quick_jump_box" onchange="if (this.value != '') { window.location = this.value; }"><option selected="selected" value="">プロジェクトへ移動...</option><option value="" disabled="disabled">---</option><option value="/projects/androids?jump=admin">Android Projects</option><option value="/projects/widget-search?jump=admin">&nbsp;&nbsp;» Search Widget</option><option value="/projects/business?jump=admin">Business</option><option value="/projects/practice?jump=admin">Practice</option><option value="/projects/codingrules?jump=admin">&nbsp;&nbsp;» Coding Rules</option><option value="/projects/fiscal?jump=admin">&nbsp;&nbsp;» Fiscal Service</option><option value="/projects/git-test?jump=admin">&nbsp;&nbsp;» Git Test Repos</option><option value="/projects/metrostorage?jump=admin">&nbsp;&nbsp;» Metro Storage</option><option value="/projects/ptasks?jump=admin">&nbsp;&nbsp;» Personal Tasks</option></select>
+    </div>
+
+    <h1>Redmine</h1>
+
+</div>
+
+<div id="main" class="nosidebar">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+        
+        <h2>管理</h2>
+
+<div id="admin-index">
+  
+  <div id="admin-menu">
+  <ul><li><a href="http://redmine.example.org/admin/projects" class="projects">プロジェクト</a></li>
+<li><a href="http://redmine.example.org/users" class="users">ユーザー</a></li>
+<li><a href="http://redmine.example.org/groups" class="groups">グループ</a></li>
+<li><a href="http://redmine.example.org/roles" class="roles">ロールと権限</a></li>
+<li><a href="http://redmine.example.org/trackers" class="trackers">トラッカー</a></li>
+<li><a href="http://redmine.example.org/issue_statuses" class="issue_statuses issue-statuses">チケットのステータス</a></li>
+<li><a href="http://redmine.example.org/workflows/edit" class="workflows">ワークフロー</a></li>
+<li><a href="http://redmine.example.org/custom_fields" class="custom_fields custom-fields">カスタムフィールド</a></li>
+<li><a href="http://redmine.example.org/enumerations" class="enumerations">列挙項目</a></li>
+<li><a href="http://redmine.example.org/settings" class="settings">設定</a></li>
+<li><a href="http://redmine.example.org/auth_sources" class="server_authentication ldap-authentication">LDAP認証</a></li>
+<li><a href="http://redmine.example.org/admin/plugins" class="plugins">プラグイン</a></li>
+<li><a href="http://redmine.example.org/admin/info" class="info">情報</a></li></ul>
+</div>
+
+</div>
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>ロード中...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> © 2006-2015 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+
+
+
+</body></html>
