@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"regexp"
 	"strings"
 
 	"gopkg.in/yaml.v2"
@@ -14,7 +15,10 @@ import (
 
 type locale map[string]string
 
+var replaceFilter bool
+
 func main() {
+	flag.BoolVar(&replaceFilter, "replace", false, "output with replace filter style")
 	flag.Parse()
 	if flag.NArg() < 2 {
 		log.Fatal("required two locales")
@@ -41,7 +45,12 @@ func combine(file1, file2 string, w io.Writer) error {
 		if v1 == "" || v2 == "" {
 			continue
 		}
-		fmt.Fprintf(w, "sub_filter %q %q;\n", v1, v2)
+		switch {
+		case replaceFilter:
+			fmt.Fprintf(w, "replace_filter %q %q g;\n", regexp.QuoteMeta(v1), v2)
+		default:
+			fmt.Fprintf(w, "sub_filter %q %q;\n", v1, v2)
+		}
 	}
 	return nil
 }
