@@ -10,7 +10,7 @@ ECHO NGINX is running already.
 GOTO :ERROR_END
 
 :NO_RUNNING_NGINX
-ECHO NGINX (kiidocs) Listening http://127.0.0.1:4000/
+ECHO NGINX (openresty) Listening http://127.0.0.1:4000/
 %NGINX_HOME%\nginx -c conf/nginx.conf
 
 GOTO END
