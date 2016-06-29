@@ -12,16 +12,16 @@ Measure average of time per request.
 
 All data's unit is millisecond.
 
-               |none  |subst
----------------|-----:|-----:
-/              |0.055 |0.086
-/admin.html    |0.048 |0.192
-/settings.html |0.065 |1.397
+               |none  |subst (255)
+---------------|-----:|-----------:
+/              |0.055 |      0.086
+/admin.html    |0.048 |      0.192
+/settings.html |0.065 |      1.397
 
 Using regexp filter.
 
-Regex entries  |1034  |500     |100
----------------|-----:|-------:|------:
-/              |  611 |  50.381| 2.295
-/admin.html    | 2902 | 178.126| 7.367
-/settings.html |43771 |2127.501|86.995
+Regex entries  |924       |500      |100
+---------------|---------:|--------:|------:
+/              |  439.353 |  50.381 | 2.295
+/admin.html    | 2118.383 | 178.126 | 7.367
+/settings.html |24201.220 |2127.501 |86.995
