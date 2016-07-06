@@ -1,6 +1,6 @@
 # Translation by substitution on nginx
 
-## Linux
+## Try on Linux
 
     ../root/nginx/sbin/nginx -p `pwd`/nginx-env -c conf/nginx.conf
 
@@ -25,3 +25,19 @@ Regex entries  |924       |500      |100
 /              |  439.353 |  50.381 | 2.295
 /admin.html    | 2118.383 | 178.126 | 7.367
 /settings.html |24201.220 |2127.501 |86.995
+
+Using substitute and regexp filter (in this order).
+
+               |100    
+---------------|------:
+/              | 2.223 
+/admin.html    | 7.419 
+/settings.html |88.373 
+
+Using regexp and substitute filter (in this order).
+
+               |100    
+---------------|------:
+/              | 2.245 
+/admin.html    | 7.429 
+/settings.html |88.628 
