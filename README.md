@@ -41,3 +41,7 @@ Using regexp and substitute filter (in this order).
 /              | 2.245 
 /admin.html    | 7.429 
 /settings.html |88.628 
+
+## Remarks
+
+*   <https://openresty.org/download/agentzh-nginx-tutorials-en.html>
